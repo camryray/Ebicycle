@@ -13,11 +13,11 @@ class Ebicycle(Bicycle):
     def run(self,distance):
          st.write("行駛前電量：{}".format(self.vol))
          e_distance = self.vol * 10
-        if distance <= e_distance:
+         if distance <= e_distance:
             self.vol = self.vol - distance/10
             st.write("電動騎行{}km".format(distance))
             st.write("電動車剩餘電量：{}".format(self.vol))
-        else:
+         else:
             st.write("電動騎行{}km".format(e_distance))
             self.vol = 0
             super().run(distance-e_distance)
