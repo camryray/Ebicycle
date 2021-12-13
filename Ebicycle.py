@@ -1,8 +1,10 @@
+import streamlit as st
 class Bicycle:
  
     def run(self, distance):
         self.distance = distance
         st.write("用腳騎行了{} KM".format(self.distance))
+     
 class Ebicycle(Bicycle):
     def __init__(self,vol):
         self.vol = vol      #default electric quantity
