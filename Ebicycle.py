@@ -23,4 +23,4 @@ class Ebicycle(Bicycle):
             st.slider("電動騎行{}km".format(e_distance))
             self.vol = 0
             super().run(distance-e_distance)
-            st.write("行駛後電量：{}".format(self.vol))
+            st.slider("行駛後電量：{}".format(self.vol))
